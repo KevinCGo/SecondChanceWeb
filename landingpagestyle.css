@@ -31,6 +31,8 @@ input {
     left: 0;
 }
 
+/* ANCHOR Sign-in and Sign-up specs*/
+
 .signin-signup {
     position: absolute;
     top: 50%;
@@ -40,4 +42,16 @@ input {
     transition: 1s 0.9s ease-in-out;
     display: grid;
     z-index: 5;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0rem 5rem;
+    transition: all 0.2s 0.8s;
+    overflow: hidden;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
 }
