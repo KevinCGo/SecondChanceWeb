@@ -55,3 +55,43 @@ form {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
 }
+
+form.signup-form {
+    opacity: 0;
+    z-index:1;
+}
+
+form.sign-in-form {
+    z-index: 2;
+}
+
+/* ANCHOR title */
+
+.title {
+    font-size: 2.2rem;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+/* ANCHOR input field */
+
+.input-field {
+    max-width: 380px;
+    width: 100%;
+    background-color: white;
+    margin: 10px 0;
+    height: 55px;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+}
+
+.input-field i {
+    text-align: center;
+    line-height: 55px;
+    color: gray;
+    transition: 0.5s;
+    font-size: 1.1rem;
+}
