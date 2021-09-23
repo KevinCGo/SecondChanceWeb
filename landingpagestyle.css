@@ -373,6 +373,7 @@ form.sign-in-form {
   }
 }
 
+/* NOTE Media resizing */
 @media (max-width: 570px) {
   form {
     padding: 0 1.5rem;
