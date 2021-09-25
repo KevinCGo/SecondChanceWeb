@@ -25,6 +25,7 @@
   z-index: 100;
   background: var(--main-color);
   color: yellow;
+  overflow-y: auto;
 }
 
 .sidebar-header {
@@ -42,4 +43,24 @@
   margin-bottom: 1rem;
 }
 
-.sidebar li a {}
+.sidebar a {
+  color: red;
+  font-size: .9rem;
+}
+
+.sidebar a span: :last-child{
+  padding-left: .6rem;
+}
+
+.main-content {
+  position: relative;
+  margin-left: 240px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background: black;
+}
