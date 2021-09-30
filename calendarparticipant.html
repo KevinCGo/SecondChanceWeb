@@ -2,11 +2,274 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>Second Chance - User Profile</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="calendarparticipant.css">
+    <link rel="icon" href="favicon.png">
 </head>
 <body>
+    
+    <input type="checkbox" id="sidebar-toggle">
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h3 class="brand"> 
+                <span>Second Chance</span>
+            </h3> 
+            <label for="sidebar-toggle" class="ti-menu-alt"></label>
+        </div>
+        
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="">
+                        <span class="ti-home"></span>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="ti-face-smile"></span>
+                        <span>Personal Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="ti-agenda"></span>
+                        <span>Tasks</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="ti-clipboard"></span>
+                        <span>Calendar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="ti-folder"></span>
+                        <span>Workshops</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="ti-time"></span>
+                        <span>Career Tracker</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="ti-book"></span>
+                        <span>Contacts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span class="ti-settings"></span>
+                        <span>Account Setings</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    <div class="main-content">
+        
+        <header>
+            <div class="search-wrapper">
+                <span class="ti-search"></span>
+                <input type="search" placeholder="Search">
+            </div>
+            
+            <div class="social-icons">
+                <span class="ti-bell"></span>
+                <span class="ti-comment"></span>
+                <div></div>
+            </div>
+        </header>
+        
+        <main>
+            
+            <h2 class="dash-title">Overview</h2>
+            
+            <div class="dash-cards">
+                <div class="card-single">
+                    <div class="card-body">
+                        <span class="ti-briefcase"></span>
+                        <div>
+                            <h5>Account Overview</h5>
+                            <h4>--</h4>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="">View all</a>
+                    </div>
+                </div>
+                
+                <div class="card-single">
+                    <div class="card-body">
+                        <span class="ti-reload"></span>
+                        <div>
+                            <h5>Pending</h5>
+                            <h4>task--</h4>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="">View all</a>
+                    </div>
+                </div>
+                
+                <div class="card-single">
+                    <div class="card-body">
+                        <span class="ti-check-box"></span>
+                        <div>
+                            <h5>Processed</h5>
+                            <h4>task--</h4>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="">View all</a>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <section class="recent">
+                <div class="activity-grid">
+                    <div class="activity-card">
+                        <h3>Recent activity</h3>
+                        
+                        <div class="table-responsive">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Activities</th>
+                                        <th>Start Date</th>
+                                        <th>End Date</th>
+                                        <th>Users</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Career Lookup - Scrum Master</td>
+                                        <td>15 Aug, 2020</td>
+                                        <td>22 Aug, 2020</td>
+                                        <td class="td-team">
+                                            <div class="img-1"></div>
+                                            <div class="img-2"></div>
+                                            <div class="img-3"></div>
+                                        </td>
+                                        <td>
+                                            <span class="badge success">Success</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Virtual Chat w/ Chelsea P.</td>
+                                        <td>15 Aug, 2020</td>
+                                        <td>22 Aug, 2020</td>
+                                        <td class="td-team">
+                                            <div class="img-1"></div>
+                                            <div class="img-2"></div>
+                                            <div class="img-3"></div>
+                                        </td>
+                                        <td>
+                                            <span class="badge warning">Processing</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Connection Request w/ Tori L.</td>
+                                        <td>15 Aug, 2020</td>
+                                        <td>22 Aug, 2020</td>
+                                        <td class="td-team">
+                                            <div class="img-1"></div>
+                                            <div class="img-2"></div>
+                                            <div class="img-3"></div>
+                                        </td>
+                                        <td>
+                                            <span class="badge success">Success</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Resume Review w/ Michael B.</td>
+                                        <td>15 Aug, 2020</td>
+                                        <td>22 Aug, 2020</td>
+                                        <td class="td-team">
+                                            <div class="img-1"></div>
+                                            <div class="img-2"></div>
+                                            <div class="img-3"></div>
+                                        </td>
+                                        <td>
+                                            <span class="badge warning">Processing</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Entrepreneurship Workshop</td>
+                                        <td>15 Aug, 2020</td>
+                                        <td>22 Aug, 2020</td>
+                                        <td class="td-team">
+                                            <div class="img-1"></div>
+                                            <div class="img-2"></div>
+                                            <div class="img-3"></div>
+                                        </td>
+                                        <td>
+                                            <span class="badge success">Success</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="summary">
+                        <div class="summary-card">
+                            <div class="summary-single">
+                                <span class="ti-id-badge"></span>
+                                <div>
+                                    <h5>196</h5>
+                                    <small>Number of Employers Reached</small>
+                                </div>
+                            </div>
+                            <div class="summary-single">
+                                <span class="ti-calendar"></span>
+                                <div>
+                                    <h5>16</h5>
+                                    <small>Numbers of Applied Jobs</small>
+                                </div>
+                            </div>
+                            <div class="summary-single">
+                                <span class="ti-face-smile"></span>
+                                <div>
+                                    <h5>12</h5>
+                                    <small>Profile Tasks Completion</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bday-card">
+                            <div class="bday-flex">
+                                <div class="bday-img"></div>
+                                <div class="bday-info">
+                                    <h5>Reminder</h5>
+                                    <small>Virtual Meeting with Adam W.</small>
+                                </div>
+                            </div>
+                            
+                            <div class="text-center">
+                                <button>
+                                    <span class="ti-face-smile"></span>
+                                    Action
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+        
+    </div>
     
 </body>
 </html>
