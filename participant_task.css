@@ -203,7 +203,7 @@ main {
 
 .activity-card,
 .summary-card,
-.bday-card {
+.reminder-card {
     background: #fff;
     border-radius: 7px;
 }

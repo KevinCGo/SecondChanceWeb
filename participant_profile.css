@@ -130,7 +130,7 @@ header {
     width: 38px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(undraw_female_avatar_w3jkblue.svg);
+    background-image: url(img_blue_female_avatar.svg);
     border-radius: 50%;
 }
 
@@ -146,6 +146,7 @@ main {
     margin-bottom: 1rem;
 }
 
+
 .dash-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -156,13 +157,16 @@ main {
     background: #fff;
     border-radius: 7px;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    
 }
+
 
 .card-body {
     padding: 1.3rem 1rem;
     display: flex;
     align-items: center;
 }
+
 
 .card-body span {
     font-size: 1.5rem;
@@ -189,6 +193,7 @@ main {
 .card-footer a {
     color: var(--main-color);
 }
+
 
 .recent {
     margin-top: 3rem;
@@ -273,19 +278,19 @@ tbody tr:nth-child(even) {
 }
 
 .img-1 {
-    background-image: url(undraw_female_avatar_w3jkblue.svg);
+    background-image: url(img_blue_female_avatar.svg);
 }
 
 .img-2 {
-    background-image: url(undraw_female_avatar_w3jk.svg);
+    background-image: url(img_purple_female_avatar.svg);
 }
 
 .img-3 {
-    background-image: url(undraw_male_avatar_323b.svg);
+    background-image: url(img_purple_male_avatar.svg);
 }
 
 .img-4 {
-    background-image: url(plussign.png);
+    background-image: url(img_plus_sign.png);
 }
 
 .summary-card {
@@ -335,7 +340,7 @@ tbody tr:nth-child(even) {
     border: 3px solid #efefef;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(undraw_male_avatar_323b.svg);
+    background-image: url(img_purple_male_avatar.svg);
     margin-right: .7rem;
 }
 
@@ -354,6 +359,8 @@ tbody tr:nth-child(even) {
 .table-responsive {
     overflow-x: auto;
 }
+
+
 
 @media only screen and (max-width: 1200px) {
     .sidebar {
