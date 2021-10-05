@@ -130,7 +130,7 @@ header {
     width: 38px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(undraw_female_avatar_w3jkblue.svg);
+    background-image: url(Images/undraw_female_avatar_w3jkblue.svg);
     border-radius: 50%;
 }
 
@@ -203,7 +203,7 @@ main {
 
 .activity-card,
 .summary-card,
-.bday-card {
+.reminder-card {
     background: #fff;
     border-radius: 7px;
 }
@@ -261,8 +261,7 @@ tbody tr:nth-child(even) {
 
 .img-1,
 .img-2,
-.img-3,
-.img-4 {
+.img-3 {
     height: 38px;
     width: 38px;
     border-radius: 50%;
@@ -273,19 +272,15 @@ tbody tr:nth-child(even) {
 }
 
 .img-1 {
-    background-image: url(undraw_female_avatar_w3jkblue.svg);
+    background-image: url(undraw_career_progress_ivdb.svg);
 }
 
 .img-2 {
-    background-image: url(undraw_female_avatar_w3jk.svg);
+    background-image: url(undraw_Experts_re_i40h.svg);
 }
 
 .img-3 {
-    background-image: url(undraw_male_avatar_323b.svg);
-}
-
-.img-4 {
-    background-image: url(plussign.png);
+    background-image: url(undraw_High_five_re_jy71.svg);
 }
 
 .summary-card {
@@ -335,9 +330,10 @@ tbody tr:nth-child(even) {
     border: 3px solid #efefef;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(undraw_male_avatar_323b.svg);
+    background-image: url(Images/undraw_male_avatar_323b.svg);
     margin-right: .7rem;
 }
+
 
 .text-center {
     text-align: center;
@@ -407,8 +403,6 @@ tbody tr:nth-child(even) {
         left: 60px;
     }
 }
-
-
 
 @media only screen and (max-width: 860px) {
     .dash-cards {
