@@ -1,13 +1,16 @@
-.info { /*NOTE wraps around everything*/
+.info {
+    /*NOTE wraps around everything*/
     position: absolute;
     top: 0;
     right: 0;
     z-index: 9999999;
     margin: 1.5rem;
 
-    width: 90%; 
-    max-width: 1100px; /*NOTE max-width set so it doesn't pass a certain width*/
-    margin: auto; /*NOTE gives even margins on all sides*/
+    width: 90%;
+    max-width: 1100px;
+    /*NOTE max-width set so it doesn't pass a certain width*/
+    margin: auto;
+    /*NOTE gives even margins on all sides*/
 }
 
 @import url(https://fonts.googleapis.com/css?family=Montserrat:700);
@@ -15,7 +18,8 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box; /*NOTE sets everything so that the padding doesn't affect the width*/
+    box-sizing: border-box;
+    /*NOTE sets everything so that the padding doesn't affect the width*/
     padding: 0;
     margin: 0;
     /*NOTE padding and margin are set to 0 so we've basically added a reset on every element*/
@@ -32,34 +36,47 @@ body {
     font-weight: 700;
     font-size: 1rem;
     color: #fff;
+
+    /* place-items: center center;
+    display: grid;
+    height: 100vh; */
+    /*NOTE removing this code fixes error with items so the cards can be placed side by side*/
 }
 
 /*NOTE base styles for links*/
 a {
-    text-decoration: none; /*NOTE removing underlines*/
-    color:  black; /*NOTE color of links*/
+    text-decoration: none;
+    /*NOTE removing underlines*/
+    color: black;
+    /*NOTE color of links*/
 }
 
 ul {
-    list-style-type: none; /*NOTE removing bullets for UL*/
+    list-style-type: none;
+    /*NOTE removing bullets for UL*/
 }
 
 /* SECTION nav */
 .main-nav {
-    display: flex; /*NOTE sets all the inner items to flex items and align them in a horizontal row*/
-    align-items: center; 
-    justify-content: space-between; /*NOTE  distributing space between the flex items*/
+    display: flex;
+    /*NOTE sets all the inner items to flex items and align them in a horizontal row*/
+    align-items: center;
+    justify-content: space-between;
+    /*NOTE  distributing space between the flex items*/
     height: 100px;
-    padding: 0; /*NOTE top/bottom and 0 left/right */
+    padding: 0;
+    /*NOTE top/bottom and 0 left/right */
     font-size: 13px;
 }
 
-.main-nav .logo { 
+.main-nav .logo {
     width: 80px;
 }
 
-.main-nav ul { /*NOTE everything within it should be row -- aligned horizontal*/
-    display: flex; /*NOTE sets all list items to be in a horizontal row*/
+.main-nav ul {
+    /*NOTE everything within it should be row -- aligned horizontal*/
+    display: flex;
+    /*NOTE sets all list items to be in a horizontal row*/
 }
 
 /*NOTE separates the li items from  one another*/
@@ -74,17 +91,15 @@ ul {
 
 /*NOTE hover over li items*/
 .main-nav ul li a:hover {
-    border-bottom: 2px solid #262626; /*NOTE creates underline underneath li*/
+    border-bottom: 2px solid #262626;
+    /*NOTE creates underline underneath li*/
 }
 
 .main-nav ul.main-menu {
-    flex: 1; /*NOTE pushes UL to the left side near the logo*/
-    margin-left: 20px; /*NOTE pushes the UL a bit so its not sitting directly next to the logo*/
-}
-
-/*NOTE  */
-i {
-
+    flex: 1;
+    /*NOTE pushes UL to the left side near the logo*/
+    margin-left: 20px;
+    /*NOTE pushes the UL a bit so its not sitting directly next to the logo*/
 }
 
 /* Slider style */
@@ -258,15 +273,68 @@ nav>div>span {
 }
 
 /* SECTION home cards */
-.grid {
-    color:black;
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding: 20px;
+    grid-gap: 40px;
 }
 
-.grid img {
+.card {
+    background-color: #1c1b29;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+}
+
+.container {
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+img {
     width: 300px;
+    display: block;
+    border-radius: 20px 20px 0 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.home-cards {
-    display: grid; /*NOTE using this alone doesn't work, you have to tell it know what columns/rows*/
-    grid-template-columns: repeat(4, 1fr); /*NOTE places items into rows*/
+.container:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+}
+
+.card1>.container::after {
+    background-image: linear-gradient(135deg, #0100ec, #fb36f4);
+}
+
+.card2>.container::after {
+    background-image: linear-gradient(135deg, #2bdce3, #42ffdb);
+}
+
+.card3>.container::after {
+    background-image: linear-gradient(135deg, #ffab1d, #f8501c;
+    }
+
+.details {
+    padding: 20px 10px;
+}
+
+.details>h3 {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+}
+
+.details>p {
+    color: #a0a0a0;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
 }
