@@ -130,7 +130,7 @@ header {
     width: 38px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(C:\Users\KevinGo\Desktop\SecondChanceWeb-main\Images\blue_female_avatar.svg);
+    background-image: url(img_blue_female_avatar.svg);
     border-radius: 50%;
 }
 
@@ -203,7 +203,7 @@ main {
 
 .activity-card,
 .summary-card,
-.reminder-card {
+.bday-card {
     background: #fff;
     border-radius: 7px;
 }
@@ -261,7 +261,8 @@ tbody tr:nth-child(even) {
 
 .img-1,
 .img-2,
-.img-3 {
+.img-3,
+.img-4 {
     height: 38px;
     width: 38px;
     border-radius: 50%;
@@ -272,15 +273,19 @@ tbody tr:nth-child(even) {
 }
 
 .img-1 {
-    background-image: url(C:\Users\KevinGo\Desktop\SecondChanceWeb-main\Images\blue_female_avatar.svg);
+    background-image: url(img_blue_female_avatar.svg);
 }
 
 .img-2 {
-    background-image: url(C:\Users\KevinGo\Desktop\SecondChanceWeb-main\Images\purple_female_avatar.svg);
+    background-image: url(img_purple_female_avatar.svg);
 }
 
 .img-3 {
-    background-image: url(C:\Users\KevinGo\Desktop\SecondChanceWeb-main\Images\purple_male_avatar.svg);
+    background-image: url(img_purple_male_avatar.svg);
+}
+
+.img-4 {
+    background-image: url(img_plus_sign.png);
 }
 
 .summary-card {
@@ -330,10 +335,9 @@ tbody tr:nth-child(even) {
     border: 3px solid #efefef;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(C:\Users\KevinGo\Desktop\SecondChanceWeb-main\Images\purple_male_avatar.svg);
+    background-image: url(img_purple_female_avatar.svg);
     margin-right: .7rem;
 }
-
 
 .text-center {
     text-align: center;
@@ -403,6 +407,8 @@ tbody tr:nth-child(even) {
         left: 60px;
     }
 }
+
+
 
 @media only screen and (max-width: 860px) {
     .dash-cards {
