@@ -130,7 +130,7 @@ header {
     width: 38px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(undraw_female_avatar_w3jk.svg);
+    background-image: url(undraw_female_avatar_w3jkblue.svg);
     border-radius: 50%;
 }
 
@@ -261,7 +261,8 @@ tbody tr:nth-child(even) {
 
 .img-1,
 .img-2,
-.img-3 {
+.img-3,
+.img-4 {
     height: 38px;
     width: 38px;
     border-radius: 50%;
@@ -272,7 +273,7 @@ tbody tr:nth-child(even) {
 }
 
 .img-1 {
-    background-image: url(undraw_female_avatar_w3jk.svg);
+    background-image: url(undraw_female_avatar_w3jkblue.svg);
 }
 
 .img-2 {
@@ -281,6 +282,10 @@ tbody tr:nth-child(even) {
 
 .img-3 {
     background-image: url(undraw_male_avatar_323b.svg);
+}
+
+.img-4 {
+    background-image: url(plussign.png);
 }
 
 .summary-card {
@@ -312,17 +317,17 @@ tbody tr:nth-child(even) {
     color: var(--text-grey);
 }
 
-.bday-flex {
+.reminder-flex {
     display: flex;
     align-items: center;
     margin-bottom: .3rem;
 }
 
-.bday-card {
+.reminder-card {
     padding: 1rem;
 }
 
-.bday-img {
+.reminder-img {
     height: 38px;
     width: 38px;
     border-radius: 50%;

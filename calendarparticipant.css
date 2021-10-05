@@ -130,7 +130,7 @@ header {
     width: 38px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(undraw_female_avatar_w3jk.svg);
+    background-image: url(undraw_female_avatar_w3jkblue.svg);
     border-radius: 50%;
 }
 
@@ -203,7 +203,7 @@ main {
 
 .activity-card,
 .summary-card,
-.bday-card {
+.reminder-card {
     background: #fff;
     border-radius: 7px;
 }
@@ -312,17 +312,17 @@ tbody tr:nth-child(even) {
     color: var(--text-grey);
 }
 
-.bday-flex {
+.reminder-flex {
     display: flex;
     align-items: center;
     margin-bottom: .3rem;
 }
 
-.bday-card {
+.reminder-card {
     padding: 1rem;
 }
 
-.bday-img {
+.reminder-img {
     height: 38px;
     width: 38px;
     border-radius: 50%;
