@@ -105,7 +105,7 @@ ul {
 }
 
 img {
-    width:300px;
+    width: 400px;
 }
 
 h2, h3 {
@@ -118,18 +118,17 @@ h2, h3 {
 }
 
 .window-banner {
-    position: absolute;
+    /* position: absolute; */
     margin: auto;
     left: 0px;
     right: 0px;
+    font-size: 50px;
 }
 
 .window {
     width: 50%;
     position: relative;
     float: left;
-    height: 100%;
-
 }
 
 .pane {
@@ -145,6 +144,7 @@ h2, h3 {
     align-items: center;
     justify-content: space-between;
     /*NOTE  distributing space between the flex items*/
+    text-align: center;
 }
 
 #window1 {
@@ -169,4 +169,12 @@ h2, h3 {
     font-size: 15px;
     line-height: 30px;
     font-weight: 400;
+}
+
+.pane img {
+    width: 280px;
+}
+
+.sponsors img {
+    width: 750px;
 }
