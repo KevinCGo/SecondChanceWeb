@@ -43,11 +43,9 @@ ul {
 
 /* SECTION nav */
 .main-nav {
-    display: flex;
-    /*NOTE sets all the inner items to flex items and align them in a horizontal row*/
+    display: flex;/*NOTE sets all the inner items to flex items and align them in a horizontal row*/
     align-items: center;
-    justify-content: space-between;
-    /*NOTE  distributing space between the flex items*/
+    justify-content: space-between; /*NOTE  distributing space between the flex items*/
     height: 100px;
     padding: 0;
     /*NOTE top/bottom and 0 left/right */
@@ -93,7 +91,7 @@ ul {
     /*NOTE pushes the UL a bit so its not sitting directly next to the logo*/
 }
 
-/* Slider style */
+/* slider style */
 .cd-slider {
     position: relative;
     width: 100%;
@@ -329,6 +327,13 @@ img {
     font-weight: 400;
 }
 
+/* REVIEW footer */
 footer {
     color: black;
+    height: 100px;
+    padding: 0;
+    display: flex;
+    /*NOTE sets all the inner items to flex items and align them in a horizontal row*/
+    align-items: center;
+    justify-content: space-between;
 }
