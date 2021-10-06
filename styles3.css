@@ -1,0 +1,100 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    /*NOTE sets everything so that the padding doesn't affect the width*/
+    padding: 0;
+    margin: 0;
+    /*NOTE padding and margin are set to 0 so we've basically added a reset on every element*/
+    border: 0;
+}
+
+html {
+    font-size: 10px;
+    font-size: calc(5px + 0.4vw);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: black;
+}
+
+/*NOTE base styles for links*/
+a {
+    text-decoration: none;
+    /*NOTE removing underlines*/
+    color: black;
+    /*NOTE color of links*/
+}
+
+ul {
+    list-style-type: none;
+    /*NOTE removing bullets for UL*/
+}
+
+/* SECTION nav */
+.main-nav {
+    display: flex;
+    /*NOTE sets all the inner items to flex items and align them in a horizontal row*/
+    align-items: center;
+    justify-content: space-between;
+    /*NOTE  distributing space between the flex items*/
+    height: 100px;
+    padding: 0;
+    /*NOTE top/bottom and 0 left/right */
+    font-size: 13px;
+    width: auto;
+}
+
+.main-nav .logo {
+    width: 50px;
+}
+
+.main-nav ul {
+    /*NOTE everything within it should be row -- aligned horizontal*/
+    display: flex;
+    /*NOTE sets all list items to be in a horizontal row*/
+}
+
+/*NOTE separates the li items from  one another*/
+.main-nav ul li {
+    padding: 0 20px;
+}
+
+/*NOTE pushing underline down a bit */
+.main-nav ul li a {
+    padding-bottom: 2px;
+}
+
+/*NOTE hover over li items*/
+.main-nav ul li a:hover {
+    border-bottom: 2px solid #262626;
+    /*NOTE creates underline underneath li*/
+}
+
+.main-nav ul.main-menu {
+    flex: 1;
+    /*NOTE pushes UL to the left side near the logo*/
+    margin-left: 20px;
+    /*NOTE pushes the UL a bit so its not sitting directly next to the logo*/
+}
+
+/* SECTION content */
+
+.container {
+
+}
+
+.left h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.container img, .container2 img {
+    width: 300px;
+}
+
