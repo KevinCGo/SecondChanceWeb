@@ -264,8 +264,8 @@ nav>div>span {
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    padding: 20px;
-    grid-gap: 40px;
+    padding: 20px 0;
+    grid-gap: 10px;
 }
 
 .card {
@@ -325,15 +325,4 @@ img {
     font-size: 15px;
     line-height: 30px;
     font-weight: 400;
-}
-
-/* REVIEW footer */
-footer {
-    color: black;
-    height: 100px;
-    padding: 0;
-    display: flex;
-    /*NOTE sets all the inner items to flex items and align them in a horizontal row*/
-    align-items: center;
-    justify-content: space-between;
 }

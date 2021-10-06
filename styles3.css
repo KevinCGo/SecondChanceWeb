@@ -57,6 +57,12 @@ ul {
     /*NOTE top/bottom and 0 left/right */
     font-size: 13px;
     width: auto;
+
+    /*NOTE for sticky nav */
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
 }
 
 .main-nav .logo {
@@ -135,7 +141,13 @@ h2, h3 {
     width: 100%;
     position: relative;
     height: 50%;
-    text-align: right;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#pane2 h3 {
+    color:#777;
 }
 
 #pane2 {
@@ -166,13 +178,16 @@ h2, h3 {
 
 .details>p {
     color: black;
-    font-size: 15px;
+    font-size: 10px;
     line-height: 30px;
     font-weight: 400;
 }
 
 .pane img {
     width: 280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .sponsors img {
