@@ -1,3 +1,4 @@
+/* NOTE Container style */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
@@ -16,10 +17,12 @@
     box-sizing: border-box;
 }
 
+/* NOTE Sidebar menu toggle */
 #sidebar-toggle {
     display: none;
 }
 
+/* NOTE Sidebar menu */
 .sidebar {
     height: 100%;
     width: 240px;
@@ -116,6 +119,7 @@ header {
     height: 38px;
 }
 
+/* NOTE Social icons */
 .social-icons {
     display: flex;
     align-items: center;
@@ -142,6 +146,7 @@ main {
     padding: 1rem 3rem;
 }
 
+/* NOTE Dashboard cards */
 .dash-title {
     color: var(--color-dark);
     margin-bottom: 1rem;
@@ -196,6 +201,7 @@ main {
     margin-bottom: 3rem;
 }
 
+/* NOTE Activity grid */
 .activity-grid {
     display: grid;
     grid-template-columns: 75% 25%;
@@ -238,52 +244,7 @@ tbody tr:nth-child(even) {
     background: #f9fafc;
 }
 
-.badge {
-    padding: .2rem 1rem;
-    border-radius: 20px;
-    font-weight: 700;
-    font-size: .7rem;
-}
-
-.badge.success {
-    background: #DEF7EC;
-    color: var(--main-color);
-}
-
-.badge.warning {
-    background: #F0F6B2;
-    color: orange;
-}
-
-.td-team {
-    display: flex;
-    align-items: center;
-}
-
-.img-1,
-.img-2,
-.img-3 {
-    height: 38px;
-    width: 38px;
-    border-radius: 50%;
-    margin-left: -15px;
-    border: 3px solid #efefef;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.img-1 {
-    background-image: url(img_blue_female_avatar.svg);
-}
-
-.img-2 {
-    background-image: url(img_purple_female_avatar.svg);
-}
-
-.img-3 {
-    background-image: url(img_purple_male_avatar.svg);
-}
-
+/* NOTE Summary box */
 .summary-card {
     margin-bottom: 1.5rem;
     padding-top: .5rem;
@@ -313,6 +274,7 @@ tbody tr:nth-child(even) {
     color: var(--text-grey);
 }
 
+/* NOTE Reminder box */
 .reminder-flex {
     display: flex;
     align-items: center;
@@ -335,7 +297,7 @@ tbody tr:nth-child(even) {
     margin-right: .7rem;
 }
 
-
+/* NOTE Text */
 .text-center {
     text-align: center;
 }
@@ -352,6 +314,7 @@ tbody tr:nth-child(even) {
     overflow-x: auto;
 }
 
+/* NOTE Media resizing */
 @media only screen and (max-width: 1200px) {
     .sidebar {
         width: 60px;
@@ -405,6 +368,7 @@ tbody tr:nth-child(even) {
     }
 }
 
+/* NOTE Media resizing */
 @media only screen and (max-width: 860px) {
     .dash-cards {
         grid-template-columns: repeat(2,1fr);
@@ -423,12 +387,14 @@ tbody tr:nth-child(even) {
     }
 }
 
+/* NOTE Media resizing */
 @media only screen and (max-width: 600px) {
     .dash-cards {
         grid-template-columns: 100%;
     }
 }
 
+/* NOTE Media resizing */
 @media only screen and (max-width: 450px) {
     main {
         padding-left: 1rem;

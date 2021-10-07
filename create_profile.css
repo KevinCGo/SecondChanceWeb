@@ -1,5 +1,5 @@
 /* NOTE Font family is Roboto */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 * {
   margin: 0;
@@ -9,7 +9,7 @@
 
 body,
 input {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* NOTE Container style */
@@ -68,6 +68,7 @@ form.sign-in-form {
   margin-bottom: 10px;
 }
 
+/* NOTE Input fields */
 .input-field {
   max-width: 380px;
   width: 100%;
@@ -109,6 +110,7 @@ form.sign-in-form {
   font-size: 1rem;
 }
 
+/* NOTE Social media */
 .social-media {
   display: flex;
   justify-content: center;
@@ -129,11 +131,13 @@ form.sign-in-form {
   transition: 0.3s;
 }
 
+/* NOTE Social icon hover */
 .social-icon:hover {
   color: #4481eb;
   border-color: #4481eb;
 }
 
+/* NOTE Button style */
 .btn {
   width: 150px;
   background-color: #5995fd;
@@ -152,6 +156,7 @@ form.sign-in-form {
 .btn:hover {
   background-color: #8e44ad;
 }
+
 .panels-container {
   position: absolute;
   height: 100%;
@@ -182,6 +187,7 @@ form.sign-in-form {
   transition-delay: 0.4s;
 }
 
+/* NOTE Panel style */
 .panel {
   display: flex;
   flex-direction: column;
@@ -233,8 +239,6 @@ form.sign-in-form {
   transform: translateX(800px);
 }
 
-/* ANIMATION */
-
 .container.sign-up-mode:before {
   transform: translate(100%, -50%);
   right: 52%;
@@ -272,6 +276,7 @@ form.sign-in-form {
   pointer-events: all;
 }
 
+/* NOTE Media resizing  */
 @media (max-width: 870px) {
   .container {
     min-height: 800px;
@@ -404,5 +409,4 @@ form.sign-in-form {
   form i {
     cursor: pointer;
   }
-
 }
