@@ -130,7 +130,7 @@ header {
     width: 38px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(undraw_female_avatar_w3jkblue.svg);
+    background-image: url(img_blue_female_avatar.svg);
     border-radius: 50%;
 }
 
@@ -203,7 +203,7 @@ main {
 
 .activity-card,
 .summary-card,
-.bday-card {
+.reminder-card {
     background: #fff;
     border-radius: 7px;
 }
@@ -273,19 +273,19 @@ tbody tr:nth-child(even) {
 }
 
 .img-1 {
-    background-image: url(undraw_female_avatar_w3jkblue.svg);
+    background-image: url(img_blue_female_avatar.svg);
 }
 
 .img-2 {
-    background-image: url(undraw_female_avatar_w3jk.svg);
+    background-image: url(img_purple_female_avatar.svg);
 }
 
 .img-3 {
-    background-image: url(undraw_male_avatar_323b.svg);
+    background-image: url(img_purple_male_avatar.svg);
 }
 
 .img-4 {
-    background-image: url(plussign.png);
+    background-image: url(img_plus_sign.png);
 }
 
 .summary-card {
@@ -335,7 +335,7 @@ tbody tr:nth-child(even) {
     border: 3px solid #efefef;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(undraw_male_avatar_323b.svg);
+    background-image: url(img_purple_male_avatar.svg);
     margin-right: .7rem;
 }
 

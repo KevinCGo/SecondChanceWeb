@@ -6,6 +6,7 @@
     --text-grey: #8390A2;
 }
 
+
 * {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -130,7 +131,7 @@ header {
     width: 38px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(undraw_female_avatar_w3jkblue.svg);
+    background-image: url(img_blue_female_avatar.svg);
     border-radius: 50%;
 }
 
@@ -272,15 +273,15 @@ tbody tr:nth-child(even) {
 }
 
 .img-1 {
-    background-image: url(undraw_career_progress_ivdb.svg);
+    background-image: url(img_blue_female_avatar.svg);
 }
 
 .img-2 {
-    background-image: url(undraw_Experts_re_i40h.svg);
+    background-image: url(img_purple_female_avatar.svg);
 }
 
 .img-3 {
-    background-image: url(undraw_High_five_re_jy71.svg);
+    background-image: url(img_purple_male_avatar.svg);
 }
 
 .summary-card {
@@ -330,7 +331,7 @@ tbody tr:nth-child(even) {
     border: 3px solid #efefef;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(undraw_male_avatar_323b.svg);
+    background-image: url(img_text_file.svg);
     margin-right: .7rem;
 }
 
