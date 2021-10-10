@@ -1,3 +1,4 @@
+/* NOTE Font family is Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
@@ -15,10 +16,12 @@
     box-sizing: border-box;
 }
 
+/* NOTE Sidebar menu toggle */
 #sidebar-toggle {
     display: none;
 }
 
+/* NOTE Sidebar menu */
 .sidebar {
     height: 100%;
     width: 240px;
@@ -115,6 +118,7 @@ header {
     height: 38px;
 }
 
+/* NOTE Social icons */
 .social-icons {
     display: flex;
     align-items: center;
@@ -141,6 +145,7 @@ main {
     padding: 1rem 3rem;
 }
 
+/* NOTE Dashboard cards */
 .dash-title {
     color: var(--color-dark);
     margin-bottom: 1rem;
@@ -195,6 +200,7 @@ main {
     margin-bottom: 3rem;
 }
 
+/* NOTE Activity grid */
 .activity-grid {
     display: grid;
     grid-template-columns: 75% 25%;
@@ -237,6 +243,7 @@ tbody tr:nth-child(even) {
     background: #f9fafc;
 }
 
+/* NOTE Badge of completed or processing */
 .badge {
     padding: .2rem 1rem;
     border-radius: 20px;
@@ -259,6 +266,7 @@ tbody tr:nth-child(even) {
     align-items: center;
 }
 
+/* NOTE User images */
 .img-1,
 .img-2,
 .img-3,
@@ -288,6 +296,7 @@ tbody tr:nth-child(even) {
     background-image: url(img_plus_sign.png);
 }
 
+/* NOTE Summary box */
 .summary-card {
     margin-bottom: 1.5rem;
     padding-top: .5rem;
@@ -317,6 +326,7 @@ tbody tr:nth-child(even) {
     color: var(--text-grey);
 }
 
+/* NOTE Reminder box */
 .reminder-flex {
     display: flex;
     align-items: center;
@@ -339,6 +349,7 @@ tbody tr:nth-child(even) {
     margin-right: .7rem;
 }
 
+/* NOTE Text */
 .text-center {
     text-align: center;
 }
@@ -355,6 +366,7 @@ tbody tr:nth-child(even) {
     overflow-x: auto;
 }
 
+/* NOTE Media resizing */
 @media only screen and (max-width: 1200px) {
     .sidebar {
         width: 60px;
@@ -408,8 +420,7 @@ tbody tr:nth-child(even) {
     }
 }
 
-
-
+/* NOTE Media resizing */
 @media only screen and (max-width: 860px) {
     .dash-cards {
         grid-template-columns: repeat(2,1fr);
@@ -428,12 +439,14 @@ tbody tr:nth-child(even) {
     }
 }
 
+/* NOTE Media resizing */
 @media only screen and (max-width: 600px) {
     .dash-cards {
         grid-template-columns: 100%;
     }
 }
 
+/* NOTE Media resizing */
 @media only screen and (max-width: 450px) {
     main {
         padding-left: 1rem;
