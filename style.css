@@ -51,11 +51,12 @@ ul {
     /*NOTE top/bottom and 0 left/right */
     font-size: 13px;
 
+    /* REVIEW iRemove sticky nav -- interactive/simplified layout */
     /*NOTE for sticky nav */
-    position: sticky;
+    /* position: sticky;
     position: -webkit-sticky;
     top: 0;
-    z-index: 1;
+    z-index: 1; */
 }
 
 .main-nav .logo {

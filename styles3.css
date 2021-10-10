@@ -21,6 +21,8 @@ body {
     font-weight: 700;
     font-size: 1rem;
     color: black;
+
+    /* background-image: linear-gradient(-50deg, #4481EB 0%, #8E44AD 100%); */
 }
 
 /*SECTION main layout*/
@@ -57,12 +59,13 @@ ul {
     /*NOTE top/bottom and 0 left/right */
     font-size: 13px;
     width: auto;
+    /* background-color: white; */
 
     /*NOTE for sticky nav */
-    position: sticky;
+    /* position: sticky;
     position: -webkit-sticky;
     top: 0;
-    z-index: 1;
+    z-index: 1; */
 }
 
 .main-nav .logo {
@@ -193,3 +196,4 @@ h2, h3 {
 .sponsors img {
     width: 750px;
 }
+
