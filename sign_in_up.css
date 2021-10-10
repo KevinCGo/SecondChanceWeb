@@ -137,6 +137,13 @@ form.sign-in-form {
   border-color: #4481eb;
 }
 
+/* NOTE Footer - copyright */
+.footer {
+  color: #aaa;
+
+  
+}
+
 /* NOTE Button style */
 .btn {
   width: 150px;
@@ -381,6 +388,9 @@ form.sign-in-form {
     top: 5%;
     transform: translate(-50%, 0);
   }
+
+
+
 }
 
 /* NOTE Media resizing */
