@@ -146,6 +146,13 @@ main {
     padding: 1rem 3rem;
 }
 
+/* NOTE Footer - copyright */
+.footer {
+    color: #aaa;
+    align-content: center;
+    text-align: center;
+  }
+  
 /* NOTE Dashboard cards */
 .dash-title {
     color: var(--color-dark);

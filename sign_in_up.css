@@ -1,5 +1,5 @@
 /* NOTE Font family is Roboto */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 * {
   margin: 0;
@@ -9,7 +9,7 @@
 
 body,
 input {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* NOTE Container style */
@@ -77,7 +77,7 @@ form.sign-in-form {
   height: 55px;
   border-radius: 55px;
   display: grid;
-  grid-template-columns: 15% 85%;
+  grid-template-columns: 15% 65% 20%;
   padding: 0 0.4rem;
   position: relative;
 }
@@ -110,6 +110,15 @@ form.sign-in-form {
   font-size: 1rem;
 }
 
+/* NOTE Forgot password*/
+.forgot-pass {
+  text-decoration: none;
+}
+
+.forgot-pass:hover {
+  color: #4481eb;
+}
+
 /* NOTE Social media */
 .social-media {
   display: flex;
@@ -140,8 +149,6 @@ form.sign-in-form {
 /* NOTE Footer - copyright */
 .footer {
   color: #aaa;
-
-  
 }
 
 /* NOTE Button style */
@@ -163,7 +170,6 @@ form.sign-in-form {
 .btn:hover {
   background-color: #8e44ad;
 }
-
 
 .panels-container {
   position: absolute;
@@ -388,9 +394,6 @@ form.sign-in-form {
     top: 5%;
     transform: translate(-50%, 0);
   }
-
-
-
 }
 
 /* NOTE Media resizing */
@@ -422,7 +425,4 @@ form.sign-in-form {
   form i {
     cursor: pointer;
   }
-
-
-
 }
