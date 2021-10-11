@@ -1,4 +1,4 @@
-/* NOTE Container style */
+/* NOTE Font family is Roboto */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 :root {
@@ -6,7 +6,6 @@
     --color-dark: black;
     --text-grey: #8390A2;
 }
-
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -119,6 +118,38 @@ header {
     height: 38px;
 }
 
+/* NOTE Input fields */
+.input-field {
+    max-width: 380px;
+    width: 100%;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    height: 55px;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 1rem 0.4rem;
+    position: relative;
+  }
+  
+  
+  .input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+    padding-left: 40px;
+  }
+  
+  .input-field input::placeholder {
+    color: #aaa;
+    font-weight: 500;
+    text-align: left;
+  }
+
 /* NOTE Social icons */
 .social-icons {
     display: flex;
@@ -153,29 +184,43 @@ main {
     text-align: center;
   }
   
+  /* NOTE Form grid */
+  form {
+    display: grid;
+    grid-gap: 20px;
+    grid-column-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+
 /* NOTE Dashboard cards */
 .dash-title {
     color: var(--color-dark);
     margin-bottom: 1rem;
 }
 
+
 .dash-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 3rem;
+    grid-template-columns: repeat(2, 4fr);
+    grid-column-gap: 2rem;
 }
 
 .card-single {
     background: #fff;
     border-radius: 7px;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    
 }
+
 
 .card-body {
     padding: 1.3rem 1rem;
     display: flex;
     align-items: center;
 }
+
 
 .card-body span {
     font-size: 1.5rem;
@@ -203,6 +248,7 @@ main {
     color: var(--main-color);
 }
 
+
 .recent {
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -217,7 +263,7 @@ main {
 
 .activity-card,
 .summary-card,
-.reminder-card {
+.bday-card {
     background: #fff;
     border-radius: 7px;
 }
@@ -249,6 +295,59 @@ td {
 
 tbody tr:nth-child(even) {
     background: #f9fafc;
+}
+
+/* NOTE Badge of completed or processing */
+.badge {
+    padding: .2rem 1rem;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: .7rem;
+}
+
+.badge.success {
+    background: #DEF7EC;
+    color: var(--main-color);
+}
+
+.badge.warning {
+    background: #F0F6B2;
+    color: orange;
+}
+
+.td-team {
+    display: flex;
+    align-items: center;
+}
+
+/* NOTE User images */
+.img-1,
+.img-2,
+.img-3,
+.img-4 {
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    margin-left: -15px;
+    border: 3px solid #efefef;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-1 {
+    background-image: url(img_blue_female_avatar.svg);
+}
+
+.img-2 {
+    background-image: url(img_purple_female_avatar.svg);
+}
+
+.img-3 {
+    background-image: url(img_purple_male_avatar.svg);
+}
+
+.img-4 {
+    background-image: url(img_plus_sign.png);
 }
 
 /* NOTE Summary box */
@@ -300,7 +399,7 @@ tbody tr:nth-child(even) {
     border: 3px solid #efefef;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(img_text_file.svg);
+    background-image: url(img_purple_male_avatar.svg);
     margin-right: .7rem;
 }
 
@@ -408,4 +507,5 @@ tbody tr:nth-child(even) {
         padding-right: 1rem;
     }
 }
+
 
