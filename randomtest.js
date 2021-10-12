@@ -1,4 +1,4 @@
-function stockCalc(price) {
+/* function stockCalc(price) {
   let priceCost = 1 * price;
   const stockOrder = priceCost;
   if (stockOrder > 21)
@@ -35,3 +35,20 @@ else if (previousPrice < currentPrice)
 else
   console.log("$" + Loss(currentPrice, previousPrice) + " is the loss!");
  */
+
+
+  /*
+// program to display numbers from 1 to 5
+// initialize the variable
+let i = 1, n = 5;
+
+// while loop from i = 1 to 5
+while (i <= n) {
+    console.log(i);
+    i += 1;
+}
+*/
+
+for (let s=1; s<11; s++) {
+  console.log(`Your shoe costs is $ ${s*50}`);
+}
