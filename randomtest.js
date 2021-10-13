@@ -48,7 +48,13 @@ while (i <= n) {
     i += 1;
 }
 */
-
+/*
 for (let s=1; s<11; s++) {
   console.log(`Your shoe costs is $ ${s*50}`);
-}
+}*/
+
+var obj = {a: 1, b: 2, c: 3};
+
+for (const prop in obj) {
+  console.log(`obj.${prop} = ${obj[prop]}`);
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
