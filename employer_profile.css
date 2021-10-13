@@ -196,6 +196,33 @@ main {
 }
 
 
+/* NOTE Notification */
+.notification {
+    background-color: white;
+    text-decoration: none;
+    padding: 15px 8px ;
+    position: relative;
+    display: inline-block;
+    border-radius: .2rem;
+    transition: all ease 0.4s;
+  }
+
+.notification .badge:hover {
+    background: #f73535;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notification .badge {
+    position: absolute;
+    top: -4px;
+    right: -8px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background: #FA3E3E;
+    font-size: 12px;
+    color: white;
+  }
+  
 .recent {
     margin-top: 3rem;
     margin-bottom: 3rem;
