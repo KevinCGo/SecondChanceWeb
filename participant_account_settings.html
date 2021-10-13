@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-    <title>Second Chance - Tasks</title>
+    <title>Second Chance - Account Settings</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
-    <link rel="stylesheet" href="account_settings.css">
+    <link rel="stylesheet" href="participant_account_settings.css">
     <link rel="icon" href="img_second_chance_icon.png">
 </head>
 
@@ -53,7 +53,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="participant_workshop.html">
                         <span class="ti-folder"></span>
                         <span>Workshops</span>
                     </a>
@@ -71,7 +71,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="account_settings.html">
+                    <a href="participant_account_settings.html">
                         <span class="ti-settings"></span>
                         <span>Account Setings</span>
                     </a>
@@ -106,7 +106,7 @@
             <!-- NOTE Cards - participant picture, and about the participant -->
             <div class="dash-cards">
 
-                <div class="card-single" style="background-image: url(img_power.svg); width: 200px;">
+                <div class="card-single" style="background-image: url(img_white_background.svg); width: 200px;">
                     <div class="card-body">
                         <div>
                             <br>
@@ -119,40 +119,39 @@
                 <!-- NOTE Cards - Buttons - leads to schedule meeting, and download resume -->
                 <div class="card-single" style="width: 895 px;">
                     <div class="card-body">
-                        <div>
+                        <div style="width: 680px;">
                             <form action="#" class="sign-up-form">
                                 <h5>&emsp;First Name:</h5>
-                                        <div class="input-field">
-                                        <input type="text" name="username" placeholder="First Name" id="firstname" />
-                                        </div>
-                                      
-                                <h5>&emsp;&emsp;Last Name:<h5>
-                                        <div class="input-field">
-                                        <input type="email" name="username" placeholder="Last Name" id="lastname"  />
-                                        </div>
-                                        
-                                <h5>&emsp;Email:<h5>
-                                        <div class="input-field">
-                                        <input type="text" name="email" placeholder="Email" id="email"  />
-                                        </div>
-                                        
-                                <h5>&emsp;Interest:<h5>
-                                        <div class="input-field">
-                                        <input type="text" name="interest" placeholder="Interest" id="interest"  />
-                                        </div>
-                                        
-                                <h5>&emsp;&emsp;Bio:<h5>
-                                        <div class="input-field">
-                                        <input type="text" name="email" placeholder="Bio" id="bio"  />
-                                        </div>   
-                                        
+                                <textarea class="input-field" id="Firstname" name="Firstname"
+                                                            rows="4" cols="50" placeholder="&emsp;First Name" ></textarea>
+
+                                <h5>&emsp;&emsp;&emsp;Last Name:<h5>
+                                    <textarea class="input-field" id="Lastname" name="Lastname"
+                                                            rows="4" cols="50" placeholder="&emsp;Last Name" ></textarea>
+
+                                        <h5>&emsp;Email:<h5>
+                                            <textarea class="input-field" id="Email" name="Email"
+                                            rows="4" cols="50" placeholder="&emsp;Email"></textarea>
+
+                                                <h5>&emsp;&emsp;Interest:<h5>
+                                                        <textarea class="input-field" id="Interest" name="Interest"
+                                                            rows="4" cols="50" placeholder="&emsp;Interest"></textarea>
+
+                                                        <h5>&emsp;&emsp;Bio:<h5>
+                                                                <textarea class="input-field" id="Bio" name="Bio"
+                                                                    rows="4" cols="50" placeholder="&emsp;Bio"></textarea>
+
+                                                                <h5>&emsp;&emsp;Password:<h5>
+                                                                        <textarea class="input-field" id=""
+                                                                            name="Password" rows="4" cols="50"
+                                                                            placeholder="&emsp;Password"></textarea>
                             </form>
                         </div>
                     </div>
                 </div>
-               
-               
-                
+
+
+
                 <div class="text-center">
                     <br>
                     <button>
@@ -162,7 +161,7 @@
                 <div class="text-center">
                     <br>
                     <button>
-                        <a style="text-decoration:none; color: white;" href="participant_task.html">Submit</a>
+                        <a style="text-decoration:none; color: white;" href="participant_profile.html">Submit</a>
                     </button>
                 </div>
 

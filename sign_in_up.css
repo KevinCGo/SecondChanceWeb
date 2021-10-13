@@ -80,6 +80,7 @@ form.sign-in-form {
   grid-template-columns: 15% 65% 20%;
   padding: 0 0.4rem;
   position: relative;
+  border: solid 0.25px #444;
 }
 
 .input-field i {
@@ -141,11 +142,17 @@ form.sign-in-form {
   transition: 0.3s;
 }
 
+/* NOTE social icon hover */
 .social-icon:hover {
   color: #4481eb;
   border-color: #4481eb;
 }
 
+/* NOTE inner button hover */
+.btn.transparent:hover {
+  color: #444;;
+ }
+ 
 /* NOTE Footer - copyright */
 .footer {
   color: #aaa;

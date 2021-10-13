@@ -157,6 +157,11 @@ form.sign-in-form {
   background-color: #8e44ad;
 }
 
+/* NOTE Footer - copyright */
+.footer {
+  color: #aaa;
+}
+
 .panels-container {
   position: absolute;
   height: 100%;
@@ -232,6 +237,11 @@ form.sign-in-form {
   height: 41px;
   font-weight: 600;
   font-size: 0.8rem;
+}
+
+/* NOTE inner button hover */
+.btn.transparent:hover {
+ color: #444;;
 }
 
 .right-panel .image,
