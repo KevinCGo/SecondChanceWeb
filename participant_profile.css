@@ -118,6 +118,10 @@ header {
     height: 38px;
 }
 
+a { 
+    color: white;
+}
+
 /* NOTE Social icons */
 .social-icons {
     display: flex;
