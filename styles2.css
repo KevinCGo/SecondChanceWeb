@@ -153,6 +153,7 @@ body {
    color: var(--body-color);
   }
  }
+ 
  .detail-button {
   background-color: var(--inactive-color);
   color: var(--subtitle-color);
@@ -189,7 +190,7 @@ body {
  padding: 0 40px;
  white-space: nowrap;
  background-color: var(--header-bg-color);
- height: 60px;
+ height: 5px;
  width: 100%;
  font-size: 14px;
  justify-content: space-between;

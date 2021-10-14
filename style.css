@@ -1,5 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:700);
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *,
 *::before,
 *::after {
@@ -17,18 +16,19 @@ html {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 1rem;
     color: #fff;
-
     /* place-items: center center;
     display: grid;
     height: 100vh; */
     /*NOTE removing this code fixes error with items so the cards can be placed side by side*/
 }
 
+
 /*NOTE base styles for links*/
+
 a {
     text-decoration: none;
     /*NOTE removing underlines*/
@@ -41,17 +41,19 @@ ul {
     /*NOTE removing bullets for UL*/
 }
 
+
 /* SECTION nav */
+
 .main-nav {
-    display: flex;/*NOTE sets all the inner items to flex items and align them in a horizontal row*/
+    display: flex;
+    /*NOTE sets all the inner items to flex items and align them in a horizontal row*/
     align-items: center;
-    justify-content: space-between; /*NOTE  distributing space between the flex items*/
+    justify-content: space-between;
+    /*NOTE  distributing space between the flex items*/
     height: 100px;
     padding: 0;
     /*NOTE top/bottom and 0 left/right */
     font-size: 13px;
-
-    /* REVIEW iRemove sticky nav -- interactive/simplified layout */
     /*NOTE for sticky nav */
     /* position: sticky;
     position: -webkit-sticky;
@@ -69,17 +71,23 @@ ul {
     /*NOTE sets all list items to be in a horizontal row*/
 }
 
+
 /*NOTE separates the li items from  one another*/
+
 .main-nav ul li {
     padding: 0 20px;
 }
 
+
 /*NOTE pushing underline down a bit */
+
 .main-nav ul li a {
     padding-bottom: 2px;
 }
 
+
 /*NOTE hover over li items*/
+
 .main-nav ul li a:hover {
     border-bottom: 2px solid #262626;
     /*NOTE creates underline underneath li*/
@@ -92,7 +100,9 @@ ul {
     /*NOTE pushes the UL a bit so its not sitting directly next to the logo*/
 }
 
+
 /* slider style */
+
 .cd-slider {
     position: relative;
     width: 100%;
@@ -161,7 +171,9 @@ blockquote span {
     font-size: 1.4rem;
 }
 
+
 /* current slide ---------------------------------*/
+
 .cd-slider li.current_slide {
     visibility: visible;
 }
@@ -175,7 +187,9 @@ blockquote span {
     transform: scale(1);
 }
 
+
 /* SECTION left & right selectors  ---------------------------------*/
+
 nav div {
     position: absolute;
     top: 50%;
@@ -261,11 +275,13 @@ nav>div>span {
     transition: width .6s, height .6s;
 }
 
+
 /* SECTION home cards */
+
 .cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    padding: 20px 0;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 20px;
     grid-gap: 10px;
 }
 
@@ -280,12 +296,11 @@ nav>div>span {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
-img {
-    width: 300px;
+.container img {
+    width: 100%;
     display: block;
     border-radius: 20px 20px 0 0;
-    margin-left: auto;
-    margin-right: auto;
+    height: 250px;
 }
 
 .container:after {
@@ -296,26 +311,27 @@ img {
     top: 0;
     left: 0;
     border-radius: 20px 20px 0 0;
+    opacity: 0.7;
 }
 
-.card1>.container::after {
-    background-image: linear-gradient(135deg, #0100ec, #fb36f4);
+.card1>.container:after {
+    background-image: linear-gradient( 135deg, #0100ec, #fb36f4);
 }
 
-.card2>.container::after {
-    background-image: linear-gradient(135deg, #2bdce3, #42ffdb);
+.card2>.container:after {
+    background-image: linear-gradient( 135deg, #2bdce3, #42ffdb);
 }
 
-.card3>.container::after {
-    background-image: linear-gradient(135deg, #ffab1d, #f8501c);
-    }
+.card3>.container:after {
+    background-image: linear-gradient( 135deg, #ffab1d, #f8501c);
+}
 
 .details {
-    padding: 10px 10px;
+    padding: 5px 5px;
 }
 
 .details>h3 {
-    color: white;
+    color: #ffffff;
     font-weight: 600;
     font-size: 18px;
     margin: 10px 0 15px 0;
@@ -326,4 +342,13 @@ img {
     font-size: 15px;
     line-height: 30px;
     font-weight: 400;
+}
+
+
+/* SECTION footer */
+
+.footer h6 {
+    color: #aaa;
+    text-align: center;
+    font-size: 13px;
 }
