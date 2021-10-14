@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    /*NOTE sets everything so that the padding doesn't affect the width*/
+    padding: 0;
+    margin: 0;
+    /*NOTE padding and margin are set to 0 so we've basically added a reset on every element*/
+    border: 0;
+}
+
+html {
+    font-size: 10px;
+    font-size: calc(5px + 0.4vw);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #fff;
+    /* place-items: center center;
+    display: grid;
+    height: 100vh; */
+    /*NOTE removing this code fixes error with items so the cards can be placed side by side*/
+}
+
+
+/*NOTE base styles for links*/
+
+a {
+    text-decoration: none;
+    /*NOTE removing underlines*/
+    color: black;
+    /*NOTE color of links*/
+}
+
+ul {
+    list-style-type: none;
+    /*NOTE removing bullets for UL*/
+}
+
+
+/* SECTION nav */
+
+.main-nav {
+    display: flex;
+    /*NOTE sets all the inner items to flex items and align them in a horizontal row*/
+    align-items: center;
+    justify-content: space-between;
+    /*NOTE  distributing space between the flex items*/
+    height: 100px;
+    padding: 0;
+    /*NOTE top/bottom and 0 left/right */
+    font-size: 13px;
+    /*NOTE for sticky nav */
+    /* position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1; */
+}
+
+.main-nav .logo {
+    width: 50px;
+}
+
+.main-nav ul {
+    /*NOTE everything within it should be row -- aligned horizontal*/
+    display: flex;
+    /*NOTE sets all list items to be in a horizontal row*/
+}
+
+
+/*NOTE separates the li items from  one another*/
+
+.main-nav ul li {
+    padding: 0 20px;
+}
+
+
+/*NOTE pushing underline down a bit */
+
+.main-nav ul li a {
+    padding-bottom: 2px;
+}
+
+
+/*NOTE hover over li items*/
+
+.main-nav ul li a:hover {
+    border-bottom: 2px solid #262626;
+    /*NOTE creates underline underneath li*/
+}
+
+.main-nav ul.main-menu {
+    flex: 1;
+    /*NOTE pushes UL to the left side near the logo*/
+    margin-left: 20px;
+    /*NOTE pushes the UL a bit so its not sitting directly next to the logo*/
+}
+
+
+/* slider style */
+
+.cd-slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.cd-slider.ie9 nav div span {
+    display: none;
+}
+
+.cd-slider ul li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    transition: visibility 0s .6s;
+}
+
+.cd-slider ul li::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 100%;
+    width: 135vh;
+    height: 135vh;
+    border: solid rgba(0, 0, 0, 0.2);
+    border-width: 0;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: border-width .4s .6s;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: 50% 100%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    mix-blend-mode: lighten;
+    opacity: 1;
+    transform: scale(1.2);
+    transition: opacity .4s .6s, transform .4s .6s;
+}
+
+.content blockquote {
+    position: absolute;
+    bottom: 5%;
+    left: 4%;
+    z-index: 2;
+    max-width: 45%;
+}
+
+blockquote p {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+blockquote span {
+    font-size: 1.4rem;
+}
+
+
+/* current slide ---------------------------------*/
+
+.cd-slider li.current_slide {
+    visibility: visible;
+}
+
+.cd-slider li.current_slide::before {
+    border-width: 16rem;
+}
+
+.cd-slider li.current_slide .content {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* SECTION left & right selectors  ---------------------------------*/
+
+nav div {
+    position: absolute;
+    top: 50%;
+    left: 4%;
+    width: 5rem;
+    height: 5rem;
+    margin-top: -2.5rem;
+    list-style: none;
+}
+
+nav div:last-of-type {
+    left: auto;
+    right: 4%;
+}
+
+.prev,
+.next {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 100%;
+    transition: box-shadow .3s;
+}
+
+.prev::before,
+.prev::after,
+.next::before,
+.next::after {
+    content: '';
+    position: absolute;
+    left: 43%;
+    background: #fff;
+    width: .4rem;
+    min-width: 3px;
+    border-radius: 3px;
+    height: 34%;
+}
+
+.prev::before {
+    transform: rotate(45deg);
+    top: 24%;
+}
+
+.prev::after {
+    transform: rotate(-45deg);
+    bottom: 24%;
+}
+
+.next::before,
+.next::after {
+    left: auto;
+    right: 43%;
+}
+
+.next::before {
+    transform: rotate(-45deg);
+    top: 24%;
+}
+
+.next::after {
+    transform: rotate(45deg);
+    bottom: 24%;
+}
+
+.prev:hover,
+.next:hover {
+    box-shadow: 0 0 0 1rem rgba(0, 0, 0, 0.15);
+}
+
+nav>div>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    z-index: 5;
+    pointer-events: none;
+    will-change: width, height;
+    transform: translate(-50%, -50%);
+    transition: width .6s, height .6s;
+}
+
+
+/* SECTION home cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 20px;
+    grid-gap: 10px;
+}
+
+.card {
+    background-color: #1c1b29;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+}
+
+.container {
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.container img {
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+    height: 250px;
+}
+
+.container:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
+}
+
+.card1>.container:after {
+    background-image: linear-gradient( 135deg, #0100ec, #fb36f4);
+}
+
+.card2>.container:after {
+    background-image: linear-gradient( 135deg, #2bdce3, #42ffdb);
+}
+
+.card3>.container:after {
+    background-image: linear-gradient( 135deg, #ffab1d, #f8501c);
+}
+
+.details {
+    padding: 5px 5px;
+}
+
+.details>h3 {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+}
+
+.details>p {
+    color: #a0a0a0;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+
+/* SECTION footer */
+
+.footer h6 {
+    color: #aaa;
+    text-align: center;
+    font-size: 13px;
+}
